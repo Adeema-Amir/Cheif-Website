@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chef's Special Website</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+  body{background:#fafafa;color:#333;}
+
+  /* NAVBAR */
+  nav{
+    width:100%;
+    background:#d62828;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#fff;
+  }
+  nav h1{font-size:26px;font-weight:bold;}
+  nav ul{display:flex;gap:25px;list-style:none;}
+  nav ul li a{color:white;text-decoration:none;font-size:18px;transition:.3s;}
+  nav ul li a:hover{opacity:.7;}
+
+  /* HERO SECTION */
+  .hero{
+    margin-top:20px;
+    width:100%;
+    height:580px;
+    background:url('5.jpg') center/cover no-repeat;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .hero h2{
+    background:rgba(0,0,0,0.6);
+    padding:20px 35px;
+    border-radius:10px;
+    color:#fff;
+    font-size:32px;
+  }
+
+  section{padding:50px 40px;}
+
+  /* RATING */
+  .rating{
+    background:#ffe8d6;
+    border-radius:15px;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .stars{
+    color:#ffb703;
+    font-size:26px;
+  }
+
+  /* FAMOUS DISHES */
+  .dishes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+  }
+  .dish{
+    background:#fff;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    text-align:center;
+  }
+  .dish img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:12px;
+  }
+
+  /* SITTING ARRANGEMENT */
+  .sit{
+    background:#ffe5ec;
+    padding:25px;
+    border-radius:15px;
+    line-height:1.6;
+  }
+
+  /* FOOTER */
+  footer{
+    background:#03045e;
+    padding:30px;
+    color:white;
+    margin-top:40px;
+    text-align:center;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <h1>Chef's Kitchen</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#rating">Rating</a></li>
+      <li><a href="#dishes">Dishes</a></li>
+      <li><a href="#sitting">Sitting</a></li>
+    </ul>
+  </nav>
+</br></br></br></br></br>
+  <div class="hero" id="home">
+    <h2>Welcome to My Premium Chef Service</h2>
+  </div>
+</br></br></br>
+  <section id="rating">
+    <h2>Customer Rating</h2><br>
+    <div class="rating">
+      <p>My Customers Love My Food!</p>
+      <div class="stars">★★★★★</div>
+      <p>Delivery: ✔ Home Delivery Available</p>
+      <p>Famous For: Biryani • Karahi • Kabab • Handi • BBQ</p>
+    </div>
+  </section>
+</br></br></br></br>
+  <section id="dishes">
+    <h2>My Special Dishes</h2><br>
+    <div class="dishes-grid">
+      <div class="dish">
+        <img src="./4.jpg" />
+        <h3>Biryani – Rs 250</h3>
+      </div>
+
+      <div class="dish">
+        <img src="./1.jpg" />
+        <h3>Chicken Karahi – Rs 1200</h3>
+      </div>
+
+      <div class="dish">
+        <img src="./2.jpg" />
+        <h3>BBQ Kabab – Rs 400</h3>
+      </div>
+
+      <div class="dish">
+        <img src="./3.jpg" />
+        <h3>Chicken Handi – Rs 1000</h3>
+      </div>
+    </div>
+  </section>
+</br></br></br></br></br>
+  <section id="sitting">
+    <h2>My Sitting Arrangement</h2><br>
+    <div class="sit">
+      <p>I provide a clean, stylish and comfortable sitting arrangement for dine-in customers.</p>
+      <p>Family-friendly • Air Conditioned • Calm Environment</p>
+      <p>Perfect for small parties, celebrations and gatherings.</p>
+    </div>
+  </section>
+</br></br></br></br></br></br></br>
+  <footer>
+    <p>© 2022 Chef's Kitchen — All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
